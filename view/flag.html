@@ -1,0 +1,64 @@
+{{define "body"}}
+<div class="container">
+
+	<h1>FFS :: Flag :: { name }</h1>
+
+	<div class="form-group">
+		<label>Name:</label>
+		<div class="input-group">
+			<input class="form-control" name="name">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label>Type:</label>
+		<div class="input-group">
+			<select class="form-control" name="type">
+				<option>bool</option>
+				<option>enum</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label>Enum Values:</label>
+		<div class="input-group">
+			<textarea class="form-control" name="enum"></textarea>
+		</div>
+		<p><small>Enter a text list here, one per line -- OR -- enter JSON</small></p>
+	</div>
+
+	<div class="row">
+	<div class="col-md-6">
+		<div class="form-group">
+			<label>Stub:</label>
+			<div class="input-group">
+				<input class="form-control" name="stub" readonly>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="form-group">
+			<label>Hash:</label>
+			<div class="input-group">
+				<input class="form-control" name="stub" readonly>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="form-actions">
+		<button class="btn btn-outline-success"><i class="fa fa-save"></i> Save</button>
+		<button class="btn btn-outline-danger"><i class="fa fa-trash"></i> Delete</button>
+	</div>
+
+</div>
+{{end}}
+
+{{define "code"}}
+<script>
+$(function() {
+	// riot.mount('*');
+});
+</script>
+{{end}}

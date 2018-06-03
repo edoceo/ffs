@@ -1,0 +1,21 @@
+;
+; Configuration for Feature Flag Service
+;
+
+[App]
+	base = /
+	root = "webroot/"
+	skin = "default"
+
+[HTTP]
+	bind = "0.0.0.0:8080"
+	username = "ffs"
+	password = "ffs"
+
+[Database]
+;	postgres://pqgotest:password@localhost/pqgotest?sslmode=verify-full")
+	postgres://ffs:ffs@localhost/ffs
+
+[Redis]
+	host = localhost
+	port = 11211

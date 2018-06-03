@@ -1,0 +1,26 @@
+{{define "body"}}
+<div class="container">
+
+	<section>
+	<h2>Flags</h2>
+	<flag-list></flag-list>
+	</section>
+
+	<section>
+	<h2>Users</h2>
+	<user-list></user-list>
+	</section>
+
+</div>
+
+{{end}}
+
+{{define "code"}}
+<script>
+$(function() {
+
+	riot.mount('*');
+
+});
+</script>
+{{end}}
